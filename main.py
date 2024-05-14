@@ -457,6 +457,7 @@ recognizer = CustomRecognizer()
 tts = pyttsx3.init()
 default_user = None
 BASE_URL = "http://127.0.0.1:8000/"
+
 if __name__ == "__main__":
     textDescriptionFunction = """
     Вас приветствует голосовой помощник Марвин. Голосовому помощнику доступны следующие команды: 

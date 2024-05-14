@@ -12,6 +12,21 @@ Instalation
 
 SwaggerUI ``127.0.0.1:8000/swaggerUI``. OpenAPI ``127.0.0.1:8000/openAPI``
 
+
+Linux installation
+------------
+`$ python3 -m venv venv`
+`$ source venv/bin/activate`
+`$ sudo apt-get install libasound-dev libportaudio2 libportaudiocpp0 portaudio19-dev -y`
+`$ pip install -r requirements.txt`
+`$ fastapi dev api.py`
+
+
+Docker installation
+------------
+`$ docker-compose down && docker-compose build && docker-compose up`
+
+
 Requirements
 ------------
 * **Python** 3.8+ (required)

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  true-tech-hack:
+    container_name: true-tech-hack
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+    build: .
+    command: python main.py & disown && fastapi dev api.py --host 0.0.0.0 --port 8000
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/usr/app/
